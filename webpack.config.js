@@ -4,7 +4,7 @@ module.exports = (env) => {
   const isProduction = env === 'production'
 
   return {
-    entry: './src/app.js',
+    entry: './src/playground/redux-expensify.js',
     output: {
       path: path.join(__dirname, 'public'),
       filename: 'bundle.js'
