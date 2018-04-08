@@ -27,7 +27,7 @@ store.dispatch(setTextFilter('RENT'))
 
 setTimeout(() => {
   const expense3 = store.dispatch(addExpense({ description: 'Phone', amount: 500, createdAt: 9000}))
-  store.dispatch(setTextFilter('water'))
+  store.dispatch(setTextFilter('power'))
 }, 3000)
 
 const jsx = (
