@@ -12,6 +12,7 @@ const ExpenseList = (props) => (
           <th>Description</th>
           <th>Amount</th>
           <th>Created At</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
