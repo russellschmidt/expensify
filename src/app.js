@@ -19,16 +19,10 @@ store.subscribe(() => {
   console.log(visibleExpenses)
 })
  
-const expense1 = store.dispatch(addExpense({ description: 'Water', amount: 1000, createdAt: -1000}))
-const expense2 = store.dispatch(addExpense({ description: 'Power', amount: 200, createdAt: 1000}))
-const expense3 = store.dispatch(addExpense({ description: 'Rent', amount: 300, createdAt: 10000}))
-
-store.dispatch(setTextFilter('power'))
-
-// setTimeout(() => {
-//   const expense3 = store.dispatch(addExpense({ description: 'Phone', amount: 500, createdAt: 9000}))
-//   store.dispatch(setTextFilter())
-// }, 3000)
+const expense1 = store.dispatch(addExpense({ description: 'Water bill', amount: 200, createdAt: -1000}))
+const expense2 = store.dispatch(addExpense({ description: 'Power bill', amount: 500, createdAt: 1000}))
+const expense3 = store.dispatch(addExpense({ description: 'Rent bill', amount: 300, createdAt: 10000}))
+const expense4 = store.dispatch(addExpense({ description: 'Car bill', amount: 600, createdAt: 5000}))
 
 const jsx = (
   <Provider store={store}>
