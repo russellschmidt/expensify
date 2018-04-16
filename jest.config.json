@@ -1,0 +1,6 @@
+{
+  "setupFiles": [
+    "raf/polyfill",
+    "<rootdir>/src/tests/setupTests.js"
+  ]
+}
