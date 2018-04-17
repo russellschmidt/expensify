@@ -5,26 +5,42 @@ import {editExpense, removeExpense} from '../actions/expenses'
 
 export class EditExpensePage extends React.Component {
   onSubmit = (expense) => {
-    this.props.editExpense(expense)
+    this.props.editExpense(this.props.expense.id, expense)
+    this.props.history.push('/')
+  }
+  onRemove = (expense) => {
+    this.props.removeExpense(this.props.expense)
     this.props.history.push('/')
   }
   render() {
-    return (
+    return(
       <div>
         <h1>Edit Expense</h1>
-        <ExpenseForm expense={this.props.expense} onSubmit={this.onSubmit} />
+        <ExpenseForm 
+          expense={this.props.expense} 
+          onSubmit={this.onSubmit}
+        />
+        <button onClick={this.onRemove}>
+          Remove
+        </button>
       </div>
     )
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapStateToProps = (state, props) => ({
+    expense: state.expenses.find((expense) => expense.id === props.match.params.id)
+  }
+)
+
+const mapDispatchToProps = (dispatch, props) => {
   return {
-    editExpense: (expense) => dispatch(editExpense(expense))
+    editExpense: (id, expense) => dispatch(editExpense(id, expense)),
+    removeExpense: (expense) => dispatch(removeExpense(expense))
   }
 }
 
-export default connect(undefined, mapDispatchToProps)(EditExpensePage)
+export default connect(mapStateToProps, mapDispatchToProps)(EditExpensePage)
 
 // const EditExpensePage = (props) => {
 //   return (
