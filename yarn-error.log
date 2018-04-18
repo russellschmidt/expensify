@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/rs/.nvm/versions/node/v6.11.2/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js run test
+  /Users/rs/.nvm/versions/node/v6.11.2/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js run deploy
 
 PATH: 
   /Users/rs/.npm-packages/bin:/Users/rs/.nvm/versions/node/v6.11.2/bin:/Users/rs/.rvm/gems/ruby-2.3.3/bin:/Users/rs/.rvm/gems/ruby-2.3.3@global/bin:/Users/rs/.rvm/rubies/ruby-2.3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/Users/rs/.rvm/bin:/Users/rs/.rvm/bin
@@ -54,7 +54,7 @@ npm manifest:
       "react-modal": "2.2.2",
       "react-redux": "5.0.5",
       "react-router-dom": "4.2.2",
-      "react-test-renderer": "16.0.0",
+      "react-test-renderer": "15.6.1",
       "redux": "3.7.2",
       "sass-loader": "6.0.6",
       "style-loader": "0.18.2",
@@ -5340,12 +5340,12 @@ Lockfile:
       prop-types "^15.5.4"
       warning "^3.0.0"
   
-  react-test-renderer@16.0.0:
-    version "16.0.0"
-    resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.0.0.tgz#9fe7b8308f2f71f29fc356d4102086f131c9cb15"
+  react-test-renderer@15.6.1:
+    version "15.6.1"
+    resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-15.6.1.tgz#026f4a5bb5552661fd2cc4bbcd0d4bc8a35ebf7e"
     dependencies:
-      fbjs "^0.8.16"
-      object-assign "^4.1.1"
+      fbjs "^0.8.9"
+      object-assign "^4.1.0"
   
   react@15.6.1:
     version "15.6.1"
@@ -6732,7 +6732,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c jest --config=jest.config.json
+  Arguments: -c webpack -p --env production && netlify deploy
   Directory: /Users/rs/Projects/react-course-project/expensify
   Output:
   
