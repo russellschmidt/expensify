@@ -9,8 +9,7 @@ exports[`should render ExpenseListItem with expense 1`] = `
     />
   </td>
   <td>
-    $
-    NaN
+    $0.00
   </td>
   <td>
     Dec 31st 1969
