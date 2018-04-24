@@ -26,7 +26,7 @@ const expenses = [{
 
 test('should return correct result for expense array', () => {
   const result = getExpensesTotal(expenses)
-  expect(result).toEqual(350)
+  expect(result).toEqual(3.5)
 })
 
 test('should return 0 for empty array', () => {
@@ -36,5 +36,5 @@ test('should return 0 for empty array', () => {
 
 test('should return correct total for single item array', () => {
   const result = getExpensesTotal([expenses[0]])
-  expect(result).toEqual(200)
+  expect(result).toEqual(2)
 })
