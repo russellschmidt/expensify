@@ -1,5 +1,5 @@
 import * as firebase from 'firebase'
-import moment from 'moment'
+// import moment from 'moment'
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,

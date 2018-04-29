@@ -11,7 +11,7 @@ exports[`should render EditExpensePage correctly 1`] = `
         "amount": 109500,
         "createdAt": -345600000,
         "description": "rent",
-        "id": 2,
+        "id": "2b",
         "note": "hey",
       }
     }
