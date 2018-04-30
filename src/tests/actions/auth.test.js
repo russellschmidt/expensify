@@ -3,10 +3,11 @@ import configureMockStore from 'redux-mock-store'
 import {login, logout} from '../../actions/auth'
 
 test('should set up login action object', () => {
-  const action = login('abc123')
+  const uid = 'imauser123'
+  const action = login(uid)
   expect(action).toEqual({
     type: 'LOGIN',
-    uid: 'abc123'
+    uid: uid
   })
 })
 
