@@ -22,10 +22,21 @@
 
 .page-header__button {
   background: $deep-blue;
-  box-shadow: 2px 2px 3px $shadow-grey;
+  box-shadow: 1px 1px 2px lighten($shadow-grey, 40%);
   color: white;
   font-size: $font-size-large;
   line-height: 1;
   padding: 1rem;
   text-decoration: none;
+}
+
+.add-expense__button {
+  @extend .page-header__button;
+  border: none;
+}
+
+.remove-expense__button {
+  @extend .page-header__button;
+  background: $danger-red;
+  border: none;
 }
