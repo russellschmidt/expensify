@@ -4,8 +4,10 @@ html {
 
 body {
   background: 'white';
-  font-family: Arial, monospace;
+  font-family: Helvetica, Arial, monospace;
   font-size: $m-size;
+  color: $dark-grey;
+  line-height: 1.6;
 }
 
 button {
