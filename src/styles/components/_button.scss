@@ -1,42 +1,42 @@
-.box-layout__button {
-  background: $deep-blue;
+.button {
   border: none;
-  border-radius: 4px;
-  box-shadow: 2px 2px 3px $shadow-grey;
   color: white;
-  display: inline-block;
   font-size: $font-size-large;
   font-weight: 300;
+  line-height: 1;
+}
+
+
+.box-layout__button {
+  @extend .button;
+  background: $deep-blue;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px $shadow-grey;
+  display: inline-block;
   height: 5rem;
   text-decoration: none;
-  line-height: 1;
   width: 20rem;
 }
 
 .header__button {
+  @extend .button;
   background: none;
-  border: none;
-  color: white;
-  font-size: $font-size-large;
+  font-weight: 700;
 }
 
 .page-header__button {
+  @extend .button;
   background: $deep-blue;
   box-shadow: 1px 1px 2px lighten($shadow-grey, 40%);
-  color: white;
-  font-size: $font-size-large;
-  line-height: 1;
   padding: 1rem;
   text-decoration: none;
 }
 
 .add-expense__button {
   @extend .page-header__button;
-  border: none;
 }
 
 .remove-expense__button {
   @extend .page-header__button;
   background: $danger-red;
-  border: none;
 }
