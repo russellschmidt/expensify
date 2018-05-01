@@ -1,55 +1,92 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseList with empty message 1`] = `
-<div>
-  <p>
-    No expenses
-  </p>
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <div
+      className="list-item list-item__message"
+    >
+      <span>
+        No expenses
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`should render ExpenseList with expenses 1`] = `
-<div>
-  <table>
-    <thead>
-      <tr>
-        <th>
-          Description
-        </th>
-        <th>
-          Amount
-        </th>
-        <th>
-          Created At
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <ExpenseListItem
-        amount={195}
-        createdAt={0}
-        description="gum"
-        id="1a"
-        key="1a"
-        note=""
-      />
-      <ExpenseListItem
-        amount={109500}
-        createdAt={-345600000}
-        description="rent"
-        id="2b"
-        key="2b"
-        note="hey"
-      />
-      <ExpenseListItem
-        amount={4500}
-        createdAt={345600000}
-        description="credit card"
-        id="3c"
-        key="3c"
-        note="nope"
-      />
-    </tbody>
-  </table>
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <ExpenseListItem
+      amount={195}
+      createdAt={0}
+      description="gum"
+      id="1a"
+      key="1a"
+      note=""
+    />
+    <ExpenseListItem
+      amount={109500}
+      createdAt={-345600000}
+      description="rent"
+      id="2b"
+      key="2b"
+      note="hey"
+    />
+    <ExpenseListItem
+      amount={4500}
+      createdAt={345600000}
+      description="credit card"
+      id="3c"
+      key="3c"
+      note="nope"
+    />
+  </div>
 </div>
 `;

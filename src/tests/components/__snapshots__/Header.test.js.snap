@@ -18,9 +18,10 @@ exports[`should render header correctly 1`] = `
         </h1>
       </Link>
       <button
+        className="header__button"
         onClick={[Function]}
       >
-        Log Out
+        Logout
       </button>
     </div>
   </div>
