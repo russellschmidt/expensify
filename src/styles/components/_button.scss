@@ -1,10 +1,11 @@
 .box-layout__button {
-  width: 20rem;
-  height: 5rem;
-  border-radius: 4px;
   background: $deep-blue;
-  opacity: 0.8;
-  font-size: 1.8rem;
-  font-weight: 300;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px $shadow-grey;
   color: white;
+  font-size: $font-size-large;
+  font-weight: 300;
+  height: 5rem;
+  width: 20rem;
 }
