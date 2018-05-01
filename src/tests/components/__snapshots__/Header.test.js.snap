@@ -14,14 +14,14 @@ exports[`should render header correctly 1`] = `
         to="/dashboard"
       >
         <h1>
-          Expensify
+          xpensr
         </h1>
       </Link>
       <button
         className="header__button"
         onClick={[Function]}
       >
-        Logout
+        logout
       </button>
     </div>
   </div>

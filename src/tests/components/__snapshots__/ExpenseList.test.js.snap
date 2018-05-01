@@ -30,7 +30,7 @@ exports[`should render ExpenseList with empty message 1`] = `
       className="list-item list-item__message"
     >
       <span>
-        No expenses
+        no expenses 🤷‍
       </span>
     </div>
   </div>
