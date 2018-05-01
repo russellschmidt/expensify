@@ -11,10 +11,15 @@
 .box-layout__button {
   @extend .button;
   background: $deep-blue;
-  border-radius: 4px;
+  border-radius: 50%;
   box-shadow: 2px 2px 3px $shadow-grey;
   display: inline-block;
-  padding: 6px 12px;
+  font-size: $font-size-xl;
+  font-weight: 700;
+  height: 14rem;
+  line-height: 1.5;
+  margin-top: 10rem;
+  width: 14rem;
 }
 
 .header__button {
