@@ -5,6 +5,9 @@
   font-weight: 300;
   line-height: 1;
   text-decoration: none;
+  &:focus {
+    outline-style: none;
+  }
 }
 
 
@@ -20,6 +23,11 @@
   line-height: 1.5;
   margin-top: 10rem;
   width: 14rem;
+
+  &:active {
+    margin-top: 12rem;
+    transition: margin-top 0.5s ease;
+  }
 }
 
 .header__button {
